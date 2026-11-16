@@ -1,0 +1,17 @@
+name: UmbraAC
+version: 1.0.0
+main: dev.umbra.ac.UmbraAC
+api-version: '1.21'
+description: Modern, hafif ve modüler bir hile koruma eklentisi.
+author: ShadowKuzeyBBS
+website: https://github.com/kullaniciadin/UmbraAC
+commands:
+  umbra:
+    description: UmbraAC ana komutu
+    usage: /umbra reload
+    permission: umbra.admin
+    aliases: [ac, anticheat]
+permissions:
+  umbra.admin:
+    description: UmbraAC yonetici komutlarini kullanma izni
+    default: op

@@ -1,0 +1,57 @@
+# X-Ray Tespit Ayarları
+xray:
+  enabled: true
+  # Yön sapması açı eşiği (derece)
+  angle-threshold: 47.0
+  # Puan birikim süresi (dakika)
+  accumulation-minutes: 10
+  # Şüphe puanı eşiği (bu puanı aşınca personel uyarısı tetiklenir)
+  alert-threshold: 50
+  # Cevher türlerine göre temel puanlar
+  ore-points:
+    DIAMOND_ORE: 5
+    DEEPSLATE_DIAMOND_ORE: 5
+    GOLD_ORE: 3
+    DEEPSLATE_GOLD_ORE: 3
+    IRON_ORE: 2
+    DEEPSLATE_IRON_ORE: 2
+    COAL_ORE: 1
+    DEEPSLATE_COAL_ORE: 1
+    REDSTONE_ORE: 1
+    DEEPSLATE_REDSTONE_ORE: 1
+    LAPIS_ORE: 1
+    DEEPSLATE_LAPIS_ORE: 1
+    EMERALD_ORE: 5
+    DEEPSLATE_EMERALD_ORE: 5
+  # Yön sapması bonus puanı
+  angle-bonus: 3
+  # Oran kontrolü: son X dakikada elmas/taş oranı bu yüzdeyi aşarsa ekstra puan
+  ratio-threshold: 0.15
+  ratio-bonus: 10
+  # Reach (Menzil) Tespit Ayarları
+  reach:
+    enabled: true
+    # Maksimum vurus mesafesi (blok cinsinden)
+    max-distance: 3.5
+    # Uyari vermek icin gereken ust uste ihlal sayisi
+    alert-threshold: 3
+    # Fly (Ucus) Tespit Ayarları
+    fly:
+      enabled: true
+    # KillAura (Savas Hilesi) Tespit Ayarları
+      killaura:
+        enabled: true
+        # Saniyede izin verilen maksimum vurus sayisi
+        max-cps: 16
+        # Maksimum vurus acisi (derece cinsinden, 90 ideal)
+        max-angle: 90.0
+        # NoFall (Dusme Hasarini Engelleme) Ayarlari
+      nofall:
+        enabled: true
+        # Bu mesafeden yuksek dususlerde hasar alinmamasi supheli sayilir
+        min-fall-distance: 5.0
+        # Speed (Hiz) Tespit Ayarlari
+        speed:
+          enabled: true
+          # Maksimum izin verilen yatay hiz (blok basina tick)
+          max-speed: 0.45
