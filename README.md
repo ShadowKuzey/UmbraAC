@@ -21,3 +21,5 @@
 UmbraAC comes with a fully customizable `config.yml`. You can enable/disable specific checks and adjust the sensitivity for each one.
 
 Thats All!
+
+Note: The language of this anti-cheat is Turkish. If you do not know Turkish, we do not recommend downloading it. If you would like an English version, you will need to wait for future updates.
